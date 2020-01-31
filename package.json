@@ -1,0 +1,23 @@
+{
+  "name": "scraping_with_cypress",
+  "version": "1.0.0",
+  "description": "How to repurpose Cypress, an end-to-end testing framework, for scraping.",
+  "homepage": "https://github.com/radiocontrolled/scraping_cypress",
+  "main": "npx cypress open",
+  "author": { 
+    "name" : "Alison Benjamin",
+    "email" : "radiocontrolled@gmail.com",
+    "url" : "https://twitter.com/hey_benjamin"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/radiocontrolled/scraping_cypress.git"
+  },
+  "license": "GNU GPLv3",
+  "devDependencies": {
+    "cypress": "^3.8.3",
+    "eslint": "^6.7.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2"
+  }
+}

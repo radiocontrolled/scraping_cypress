@@ -1,0 +1,8 @@
+{
+  "chromeWebSecurity": false,
+  "video": false, 
+  "baseUrl": "https://data.brla.gov/", 
+  "integrationFolder": "cypress/scrapers", 
+  "trashAssetsBeforeRuns": false,
+  "screenshotsFolder": "data/screenshots"
+}
