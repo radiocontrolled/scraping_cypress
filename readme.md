@@ -59,7 +59,31 @@ On the right hand side is the app or website you are scraping (testing, in the p
 
 In the left hand side you see the Cypress command log which shows the commands that were run in your scraper/test. As you select a command within the command log you can "travel back in time" through the actions that Cypress took to see the state of the Website. You can also use the browser console to debug.
 
-When scraping is finished, open `data/data.json`, which holds the links this demo has scraped.
+When scraping is finished, open `data/data.json` to see your scraped data, which has the following structure:
+
+```
+{
+  "hrefs": [
+    {
+      "tag_name": "Public safety",
+      "link": "https://data.brla.gov/Public-Safety/Baton-Rouge-Crime-Incidents/fabb-cnnu"
+    },
+    {
+      "tag_name": "Public safety",
+      "link": "https://data.brla.gov/Public-Safety/baton-rouge-ds/4ney-vqnc"
+    },
+    {
+      "tag_name": "Public safety",
+      "link": "https://data.brla.gov/Public-Safety/2016-Crime-Map/mbhr-5nnz"
+    },
+    {
+      "tag_name": "Public safety",
+      "link": "https://data.brla.gov/Public-Safety/crime-incidents-data-lens/gria-bcx7"
+    },
+    ...
+  ]
+}
+```
 
 
 ## Useful Cypress API commands
