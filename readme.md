@@ -2,6 +2,8 @@
 
 This scraper browses to [Open Data Baton Rouge](https://data.brla.gov/browse), enters and submits a "public safety" term into its dataset search, handles pagination, takes screenshots, and saves a list of links to `data/data.json`. 
 
+[Session slides](https://docs.google.com/presentation/d/185-kpvqQDHdLB7BgWk9OdhrEQFGw9XAgp0XIxYCwA3Q/edit#slide=id.g7ee02ea78d_1_31)
+
 ## Setup
 
 You need to have NodeJS installed to run this demo. To check if you have NodeJS installed, do `which node` on your commandline. If that returns no path, you can install Node from here: https://nodejs.org/en/download/
@@ -12,26 +14,6 @@ npm i
 
 This gives you the Cypress desktop app with a GUI, and the Cypress CLI, which you can use to start Cypress and also integrate it into a contiunous integration pipeline.
 
-### Note 
-Outside of this tutorial, when you install Cypress from scratch (`npm install cypress --save-dev`), your install is going to come with several bits of scaffolding and sample tests: 
-
-```
-my_scraper_directory/
-  cypress/
-    fixtures/
-    integration/
-    plugins/
-    support/
-```
-
-These are various directories that you can configure to modify the behaviour of Cypress. The key directory to note is `integration`, which is Cypress' convention for where tests (i.e. scraper files) are located. The naming of this folder is changeable, so I renamed it to `scrapers`, and pointed to this renamed directory in my `cypress.json` configuration:
-
-```
-{
-  ...
-  "integrationFolder": "cypress/scrapers"
-}
-```
 
 ## Scrape using the Cypress GUI
 
@@ -146,7 +128,7 @@ You can also take [screenshots and videos](https://docs.cypress.io/guides/guides
 npx cypress run --spec "cypress/scrapers/public_safety.spec.js"
 ```
 
-## Testing conventions used in Cypress 
+## The jargon of Cypress
 
 Cypress is build for testing web applications, and as a scraping tool, is unconventional. Using Cypress test software outside of its intended purpose has its strengths and weaknesses. 
 
@@ -157,4 +139,23 @@ A weakness is that Cypress inherits some testing syntax and scaffolding. Cypress
 The key thing to understand is that if you're writing a scraper with Cypress, you will be wrapping your scraper code within `describe` and `it` blocks. You can ignore this functionality, but you can also harness it to make your code more readible. `Describe` - describes the feature you are scraping. In `public_safety.spec.js`, I called this "The https://data.brla.gov/ search page". And for the purposes of testing, the `it` block is used to contain the part of your code that scrapes; in the demo, I pass the name of every tag I am searching for.
 
 
+### Note 
+Outside of this tutorial, when you install Cypress from scratch (`npm install cypress --save-dev`), your install is going to come with several bits of scaffolding and sample tests: 
 
+```
+my_scraper_directory/
+  cypress/
+    fixtures/
+    integration/
+    plugins/
+    support/
+```
+
+These are various directories that you can configure to modify the behaviour of Cypress. The key directory to note is `integration`, which is Cypress' convention for where tests (i.e. scraper files) are located. The naming of this folder is changeable, so I renamed it to `scrapers`, and pointed to this renamed directory in my `cypress.json` configuration:
+
+```
+{
+  ...
+  "integrationFolder": "cypress/scrapers"
+}
+```
