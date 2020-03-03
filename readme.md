@@ -2,7 +2,7 @@
 
 This scraper browses to [Open Data Baton Rouge](https://data.brla.gov/browse), enters and submits a "public safety" term into its dataset search, handles pagination, takes screenshots, and saves a list of links to `data/data.json`. 
 
-[Session slides](https://docs.google.com/presentation/d/185-kpvqQDHdLB7BgWk9OdhrEQFGw9XAgp0XIxYCwA3Q/edit#slide=id.g7ee02ea78d_1_31)
+[Session tipsheet](https://docs.google.com/document/d/e/2PACX-1vSf156Hvv77LwajE1TKPjcEw6nu4gnQrXOY_cYZHhs-oFDSJmsQ1BO48Gc3juXhyLYHOZRZw3kLwB7a/pub)
 
 ## Setup
 
