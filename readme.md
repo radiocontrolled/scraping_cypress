@@ -61,11 +61,6 @@ In the left hand side you see the Cypress command log which shows the commands t
 
 When scraping is finished, open `data/data.json`, which holds the links this demo has scraped.
 
-## Run headlessly
-
-```
-npx cypress run --spec "cypress/scrapers/public_safety.spec.js"
-```
 
 ## Useful Cypress API commands
 
@@ -118,6 +113,13 @@ You can also take [screenshots and videos](https://docs.cypress.io/guides/guides
 
 ```
   cy.screenshot(`my_screenshot`);
+```
+
+
+### Run headlessly
+
+```
+npx cypress run --spec "cypress/scrapers/public_safety.spec.js"
 ```
 
 ## Testing conventions used in Cypress 
