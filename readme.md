@@ -19,7 +19,7 @@ This gives you the Cypress desktop app with a GUI, and the Cypress CLI, which yo
 
 After you install Cypress, it is a binary in your node_modules directory. 
 
-Before you open the Cypress desktop app, clone this repo to your computer (for example [by using GitHub Desktop](https://help.github.com/en/desktop/contributing-to-projects/cloning-a-repository-from-github-to-github-desktop)). Then use command line to navigate to the directory you've just created. Then type this command to run Cypress:
+Before you open the Cypress desktop app, clone this repo to your computer (for example [by using GitHub Desktop](https://help.github.com/en/desktop/contributing-to-projects/cloning-a-repository-from-github-to-github-desktop)). Then [use command line to navigate to the directory](https://www.digitalcitizen.life/command-prompt-how-use-basic-commands) you've just created. Then type this command to run Cypress:
 
 ```
 npx cypress open
