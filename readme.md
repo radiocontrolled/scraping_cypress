@@ -17,7 +17,9 @@ This gives you the Cypress desktop app with a GUI, and the Cypress CLI, which yo
 
 ## Scrape using the Cypress GUI
 
-After you install Cypress, it is a binary in your node_modules directory. You can use the following command opens the Cypress desktop app:
+After you install Cypress, it is a binary in your node_modules directory. 
+
+Before you open the Cypress desktop app, clone this repo to your computer (using GitHub Desktop). Then use command line to navigate to the directory you've just created. Then type this command to run Cypress:
 
 ```
 npx cypress open
@@ -29,7 +31,7 @@ This brings up the Cypress GUI:
 
 The GUI lists of all the scraper files have been placed in the scrapers folder (in our case, just one).
 
-Under "Integration tests", click on `public_safety.spec.js` to run start scraping.
+Under "Integration tests", click on `public_safety.spec.js` to start scraping.
 
 This will bring up another GUI (depending on the browser you've chosen, e.g. Chrome, Canary, Electron) where the scraper (written in `cypress/scraper/public_safety.spec.js`) will be run. 
 
